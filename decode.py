@@ -17,4 +17,4 @@ def helper_dp(data,k):
 def num_ways_dp(data):
     return helper_dp(data, len(data))
 
-print(num_ways_dp("121"))
+print(num_ways_dp("1211`"))

@@ -13,6 +13,20 @@ def add_one(given_array):
         result.insert(0,1)
     return result
 
-print(add_one([9,9,9]))
+
 
           
+def list_to_int_add_one(given_list):
+    concatenate = ""
+    for int_element in given_list:
+        concatenate += str(int_element)
+    concatenate_sum = int(concatenate)+1
+    
+    return_list =[]
+    for char in str(concatenate_sum):
+        return_list.append(int(char))
+    return (return_list)
+
+
+print(list_to_int_add_one([9,9,9]))
+
