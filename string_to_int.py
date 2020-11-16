@@ -25,8 +25,22 @@ def list_to_int_add_one(given_list):
     return_list =[]
     for char in str(concatenate_sum):
         return_list.append(int(char))
-    return (return_list)
+    return return_list
 
 
-print(list_to_int_add_one([9,9,9]))
+
+def list_add_one (given_list):
+    sum_int=0
+    for index, integer in enumerate(given_list[::-1]):
+        res = integer * 10**index
+        sum_int += res
+    sum_int += 1
+    
+    return_list =[]
+    for char in str(sum_int):
+        return_list.append(int(char))
+    return return_list
+
+print(list_add_one([2,3,4]))
+
 
