@@ -1,8 +1,9 @@
 def common_factor(x,y):
-    common_factors_list = []
+    counter=0
     for n in range(1,max(x,y)):
         if x % n ==0 and y % n ==0:
-            common_factors_list.append(n)
-    return common_factors_list
+            counter= counter +1
+            print("common factor " + str(counter)+ " is " +  str(n))
+    
 
-print(common_factor(10,20))
+common_factor(100,50)
